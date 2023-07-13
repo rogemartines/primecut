@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>PrimeCut</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navigation">
+        <div>
+          <a href="/" class="logo" id="home-logo">Prime<span>Cut</span></a>
+          <i class="fa-solid fa-hand-scissors"></i>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="/" id="inicio">Início</a></li>
+          <li class="nav-item"><a href="/" id="sobrenos">Sobre Nós</a></li>
+          <li class="nav-item"><a href="/" id="cortes">Cortes</a></li>
+          <li class="nav-item"><a href="/" id="contato">Contato</a></li>
+          <li class="nav-item"><a href="/" id="localizacao">Localização</a></li>
+          <li class="nav-item"><a href="/" id="redes">Siga-nos</a></li>
+        </ul>
+        <div class="menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Mensagem enviada com sucesso. Entraremos em contato em breve! <i class="fa-regular fa-thumbs-up"></i></p>
+  </div>
+
+</div>
+      <section class="home">
+        <div class="home-text">
+          <h4 class="text-h4">
+            Bem-vindo a <a href="/" class="logo">Prime<span>Cut</span></a>
+          </h4>
+          <h1 class="text-h1">
+            Permita-nos guiar você por um mundo sublime de sabores sofisticados.
+          </h1>
+          <p class="text-p">
+            Oferecemos cortes nobres, exóticos, aves e frutos do mar de alta
+            qualidade. Desfrute de uma experiência gastronômica única e
+            exclusiva conosco.
+          </p>
+          <a href="/" class="home-button">Ir para <strong>Cortes</strong></a>
+        </div>
+        <div class="home-img">
+          <img src="img/tomahawk4.png" alt="tomahawk" width="355px" />
+        </div>
+      </section>
+      <section class="about">
+        <div class="about-text">
+          <h4 class="text-h4">Sobre nós</h4>
+          <p>
+            Somos a <strong class="primecut">PrimeCut</strong>, uma empresa
+            luxuosa de carnes com cinco sedes exclusivas pelo Brasil, com
+            destaque para nossa principal no Rio de Janeiro. Selecionamos
+            cuidadosamente cortes nobres provenientes das melhores criações do
+            país, oferecendo uma experiência gastronômica de excelência. Além
+            disso, exploramos cortes exóticos e somos especializados em aves e
+            frutos do mar frescos. Nossa equipe dedicada está pronta para
+            atender com cortesia e conhecimento, garantindo que cada mordida
+            seja um deleite para os sentidos. Na
+            <strong class="primecut">PrimeCut</strong>, a sofisticação e a
+            qualidade se unem para satisfazer seus desejos culinários mais
+            requintados.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="img/wagyu.png" alt="wagyu" width="674px" />
+        </div>
+      </section>
+      <section class="cortes-nobres">
+        <h4 class="text-h4">Cortes Nobres</h4>
+        <div class="Card">
+          <img class="imageCard" src="img/tomahawk3.png" />
+          <div class="CardInner">
+            <!--             <div class="cardMid"></div>
+ -->
+            <div class="cardMid">
+              <h4 class="cardTitle" id="card-tomahawk">Tomahawk</h4>
+            <p class="cardDescription"> A carne Tomahawk é um corte nobre que oferece uma experiência gastronômica única e memorável. Com seu osso longo e marmorização perfeita, é suculenta, saborosa e irresistível. Sua textura macia e sabor intenso encantam os sentidos, elevando o prazer culinário a outro nível.</p>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <img class="imageCard" src="img/wagyu-corte.jpg">
+        <div class="CardInner">
+          <div class="cardMid"></div>
+          <div class="cardMid">
+            <h4 class="cardTitle" id="card-wagyu">Wagyu</h4>
+            <p class="cardDescription"> O Wagyu é uma raça de gado bovino do Japão, conhecida por sua carne incrivelmente macia, suculenta e saborosa. O marmoreio, com finas veias de gordura entrelaçadas na carne, proporciona um sabor singular. É uma das carnes mais valorizadas e apreciadas globalmente.</p>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <img class="imageCard" src="img/bife-ancho.jpg">
+        <div class="CardInner">
+          <div class="cardMid"></div>
+          <div class="cardMid">
+            <h4 class="cardTitle" id="card-bifeancho">Bife Ancho</h4>
+            <p class="cardDescription"> O bife ancho é um corte popular nos países da América do Sul, principalmente na Argentina. No Brasil, a carne é chamada de filé ou bife de costela e, na França, é o famoso entrecôte (ou entrecosto). É uma peça macia e muito suculenta!</p>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <img class="imageCard" src="img/prime-rib.jpg">
+        <div class="CardInner">
+          <div class="cardMid"></div>
+          <div class="cardMid">
+            <h4 class="cardTitle" id="card-primerib">Prime Rib</h4>
+            <p class="cardDescription"> O prime rib é a versão com osso de uma carne já citada, o bife ancho. A peça conta com bom marmoreio, o que a torna macia e garante um sabor irresistível. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cortes-exoticos">
+      <h4 class="text-h4">Cortes Exóticos</h4>
+      <div class="Card">
+        <img class="imageCard" src="img/carne-de-javali-exotica.jpg">
+        <div class="CardInner">
+          <div class="cardMid"></div>
+          <div class="cardMid">
+            <h4 class="cardTitle" id="card-javali">Carne de Javali</h4>
+            <p class="cardDescription">  A carne de javali, originária de javalis selvagens, tem sabor característico, intenso e levemente adocicado. Sua textura é firme e menos gordurosa que a carne de porco. É popular em pratos gourmet e pode ser preparada de várias maneiras. Apreciada pelo seu sabor distinto, proporciona uma experiência culinária única.</p>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <img class="imageCard" src="img/carne-de-pato.jpg">
+        <div class="CardInner">
+          <div class="cardMid"></div>
+          <div class="cardMid">
+            <h4 class="cardTitle" id="card-pato">Pato</h4>
+            <p class="cardDescription"> A carne de pato tem sabor rico e distinto, com textura suculenta e tenra. A gordura da pele contribui para a suculência e sabor característico. A carne escura é intensa, enquanto a carne branca é suave. Pode ser preparada de várias formas e é popular em diversas cozinhas pelo mundo devido ao seu sabor único e versatilidade culinária.</p>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <img class="imageCard" src="img/polvo.jpg">
+        <div class="CardInner">
+          <div class="cardMid"></div>
+          <div class="cardMid">
+            <h4 class="cardTitle" id="card-polvo">Polvo</h4>
+            <p class="cardDescription"> A carne de polvo é firme, mas macia quando preparada adequadamente, com sabor único e levemente adocicado. Absorve bem os temperos e sabores adicionados. Pode ser cozida, grelhada ou usada em saladas e ceviches. Apreciada globalmente, destaca-se por sua textura distintiva e versatilidade gastronômica.</p>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <img class="imageCard" src="img/lagosta.jpg">
+        <div class="CardInner">
+          <div class="cardMid"></div>
+          <div class="cardMid">
+            <h4 class="cardTitle" id="card-lagosta">Lagosta</h4>
+            <p class="cardDescription">A carne branca da cauda e garras de lagosta é apreciada por seu sabor delicado e textura macia. Cozida na água fervente ou grelhada, realça sua suculência natural. Geralmente servida com manteiga derretida ou em pratos sofisticados, como lagosta ao thermidor. Considerada uma iguaria luxuosa, é apreciada em restaurantes finos e é um verdadeiro deleite para amantes de frutos do mar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <section class="formulario">
+        <h4 class="text-h4">Formulário de Contato</h4>
+        <form onsubmit="return false" class="form">
+          <label for="name">Nome</label>
+          <input type="name" id="name" />
+          <span class="formMessage" id="nome-error"></span>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" />
+          <span class="formMessage" id="email-error"></span>
+
+          <label for="telefone">Telefone</label>
+          <input maxlength="15" type="tel"  id="telefone" onkeyup="handlePhone(event)" />
+          <span class="formMessage" id="telefone-error"></span>
+
+          <label for="preferencia">Preferência</label>
+          <select name="preferencia" id="preferencia" class="select-style">
+            <option value=""></option>
+            <option value="nobres">Cortes Nobres</option>
+            <option value="exoticos">Cortes Exóticos</option>
+            <option value="todos">Ambos</option>
+          </select>
+          <span class="formMessage" id="preferencia-error"></span>
+
+          <label for="tipo">Tipo de carne favorita</label>
+          <select name="tipo" id="tipo" class="select-style">
+            <option value=""></option>
+            <option value="Bovina">Bovina</option>
+            <option value="Suína">Suína</option>
+            <option value="aves">Aves</option>
+            <option value="frutos-do-mar">Frutos do Mar</option>
+            <option value="vegetal">Carne vegetal</option>
+            <option value="outras">Outras</option>
+          </select>
+          <span class="formMessage" id="tipo-error"></span>
+
+          <label for="comunicacao">Receber comunicações via</label>
+          <select name="comunicacao" id="comunicacao" class="select-style">
+            <option value=""></option>
+            <option value="sms">SMS</option>
+            <option value="email">E-mail</option>
+            <option value="todos">Todos os meios</option>
+          </select>
+          <span class="formMessage" id="comunicacao-error"></span>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" rows="4" cols="4" maxlength="300"></textarea>
+          <span class="formMessage" id="textarea-error"></span>
+          <button id="botao" type="submit">Enviar</button>
+        </form>
+        <div class="formImage">
+          <div class="formImageContainer">
+            <img class="form-imagem" src="img/polvo-prato.png" />
+          </div>
+        </div>
+      </section>
+      
+      <section class="mapa">
+        <div class="mapa-div">
+          <h4 class="text-h4">Nossa localização</h4>
+          <span>R. Voluntários da Pátria, 340 - f - Botafogo, Rio de Janeiro - RJ, 22270-016</span>
+        </div>
+        <div class="map-box">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3673.879461381068!2d-43.19436943320509!3d-22.954665939619932!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe09f122171%3A0xcb6578915f0cf2be!2sR.%20Volunt%C3%A1rios%20da%20P%C3%A1tria%2C%20340%20-%20f%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022270-016!5e0!3m2!1spt-BR!2sbr!4v1688019268435!5m2!1spt-BR!2sbr"
+            class="map"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="footer-content">
+          <h1>PrimeCut</h1>
+          <p>
+            O prazer em cada mordida, carnes nobres e exóticas de alta
+            qualidade.
+          </p>
+          <div class="footer-social">
+            <a href="/" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="/" class="footer-link" id="facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="/" class="footer-link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <i class="fa-sharp fa-regular fa-knife-kitchen"></i>
+          </div>
+        </div>
+        <div id="footer-copyright">
+          &#169
+          2023 todos os direitos reservados
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  </body>
+</html>

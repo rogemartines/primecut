@@ -1,0 +1,356 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --red: #c42129;
+  --white: #fff;
+  --dark: #050505;
+  --grey: #c0c0c0;
+}
+
+body {
+  color: var(--white);
+  background: var(--dark);
+}
+
+.navigation {
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  box-shadow: 0 0.05rem 0.5rem #000;
+  width: 100%;
+  background: var(--dark);
+  transition: all 0.5s;
+  position: fixed;
+}
+
+.navigation:hover {
+  box-shadow: 0 0.05rem 1.5rem var(--red);
+}
+
+.navigation .logo {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.logo span {
+  color: var(--red);
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navigation ul li a {
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+  color: var(--red);
+}
+
+.navigation i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+.menu .bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--dark);
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3) {
+  background: var(--red);
+}
+
+.home {
+  margin-bottom: 150px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+
+.home-img {
+  padding: 100px 345px;
+}
+
+.home-text {
+  max-width: 37rem;
+}
+
+.home-text .text-h4 {
+  font-size: 1.5rem;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+
+.home-text .text-h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+
+.home-text p {
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+}
+
+.home-button {
+  border-style: none;
+  padding: 15px 45px;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.home-button:hover {
+  box-shadow: 0 0.1rem 1.0rem var(--red);
+}
+
+.about {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 46px 10%;
+  display: flex;
+  background: var(--white);
+  color: var(--dark);
+  position: relative;
+}
+
+.about-text {
+  max-width: 37rem;
+  margin-bottom: 350px;
+  margin-top: 261px;
+}
+
+.about-text .text-h4 {
+  font-size: 1.5rem;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+}
+
+.primecut {
+  color: var(--red);
+}
+
+.about-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cortes-nobres {
+  background: var(--dark);
+  display: flex;
+  justify-content:space-between;
+  padding: 150px 150px;
+}
+
+.Card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  border-radius: 20px;
+  padding: 150px 0px;
+  transition: all 0.5s;
+}
+
+.imageCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.CardInner {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000, transparent);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.cardMid {
+  flex: 1;
+  padding: 0 10px;
+
+}
+
+.cardTitle {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.cardDescription {
+  color: #fff;
+  font-size: 16px;
+  font-family: sans-serif;
+  display: none;
+}
+
+.Card:hover .cardDescription{
+  display: block;
+  transition: all 0.5s;
+}
+
+.cortes-nobres .text-h4{
+  font-size: 1.5rem;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+
+.cortes-exoticos {
+  background: var(--dark);
+  display: flex;
+  justify-content:space-between;
+  padding: 150px 150px;
+  margin-bottom: 250px;
+}
+
+.cortes-exoticos .text-h4{
+  font-size: 1.5rem;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+
+.formulario{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 92px 10%;
+  display: flex;
+  background: var(--white);
+  color: var(--dark);
+  position: relative;
+}
+
+.formulario .text-h4{
+  padding: 10px 0px;
+  font-size: 1.5rem;
+  color: var(--red);
+  margin-bottom: 65.1rem;
+}
+
+.formulario .form-imagem{
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.form{
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 30%;
+  margin: 0px 0px;
+  box-shadow: 0 0.03rem 0.8rem var(--grey);
+  position: absolute;
+  left: 15%;
+  top: 20%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 10px 30px;
+}
+
+input, select, textarea {
+  margin-left: 25px;
+  width: 88%;
+  padding: 10px 10px;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  border-style: solid;
+  border-color: var(--grey);
+}
+
+button {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--red);
+}
+
+#mensagem{
+  margin-bottom: 30px;
+}
+
+.mapa{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--red);
+}
+
+.mapBox{
+  position: relative;
+  background: var(--white);
+}
+
+.mapBox .iframe{
+  width: 500px;
+  height: 100px;
+}
